@@ -283,7 +283,7 @@ section {
 }
 
 .list-work > li:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 /*=============================*/
@@ -359,7 +359,7 @@ section {
   margin-left: 30px;
 
   /*=============================*/
-  padding-bottom: 30px; /*== new ==*/
+  /*padding-bottom: 30px; */ /*== new ==*/
   /*=============================*/
 
   background: #ffffff;
@@ -369,8 +369,12 @@ section {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-caption {
+  padding: 30px 0;
+}
+
 .team-name {
-  padding-top: 30px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -380,7 +384,8 @@ section {
 }
 
 .list-team {
-  margin: 10px 0 30px 0;
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -568,7 +573,7 @@ section {
 .list-filter {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .list-filter > li:not(:last-child) {

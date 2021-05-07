@@ -98,6 +98,9 @@ section {
   font-weight: 500;
   color: inherit;
   text-decoration: none;
+
+  /*==== цвет для svg ссылок====*/
+  fill: #afb1b8;
 }
 
 .link:hover,
@@ -156,13 +159,14 @@ section {
 
 .list-add {
   display: inline-flex;
-  color: var(--main-text-cl);
+  color: var(--title-cl);
 }
 
 .list-item:not(:last-child) {
   margin-right: 50px;
 }
 /*=============================*/
+
 /*=============================*/
 
 .item-add {
@@ -170,7 +174,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: var(--title-cl);
+
   fill: var(--title-cl);
 }
 
@@ -182,28 +186,9 @@ section {
 .item-add:focus {
   fill: #2196f3;
 }
-/*
-.link-icon {
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  fill: #afb1b8;
-}
-
-.link-icon:hover,
-.link-icon:focus {
-  fill: #ffffff;
-  background-color: #2196f3;
-}
-*/
 
 /*=============================*/
+
 /*=============================*/
 
 .address {
@@ -225,6 +210,7 @@ section {
 }
 
 /*  =========================  */
+
 /*   NEW background img*/
 .dark-img {
   max-width: 1600px;
@@ -244,6 +230,7 @@ section {
   background-size: auto;
 }
 /*  =========================  */
+
 /*  =========================  */
 
 .dark-content {
@@ -251,12 +238,9 @@ section {
   flex-wrap: wrap;
 
   margin: auto;
-  /*padding-top: 200px;
-  padding-bottom: 200px;*/
 
   justify-content: center;
   width: calc(100% / 12 * 8);
-  /*min-height: 600px;*/
 }
 
 .title {
@@ -294,7 +278,7 @@ section {
 
 .list-work {
   margin: 0;
-  /*padding-bottom: 94px;*/
+
   display: flex;
 }
 
@@ -307,8 +291,6 @@ section {
 /* ==== Преимущества ====*/
 .benefits {
   margin-top: 0px;
-  /*padding-top: 94px;
-  padding-bottom: 94px;*/
 }
 
 .benefits-list {
@@ -325,6 +307,7 @@ section {
 }
 
 /*=============================*/
+
 /*   NEW  benefits svg  */
 .benefits-img {
   max-height: 120px;
@@ -338,6 +321,7 @@ section {
 }
 
 /*=====new======*/
+
 /*=============================*/
 
 .benefits-title {
@@ -360,8 +344,6 @@ section {
 
 /* ==== Команда  ==== */
 .team {
-  /*padding-top: 94px;
-  padding-bottom: 94px;*/
   background-color: var(--second-bg);
 }
 
@@ -375,9 +357,11 @@ section {
   text-align: center;
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
+
   /*=============================*/
   padding-bottom: 30px; /*== new ==*/
   /*=============================*/
+
   background: #ffffff;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -404,6 +388,7 @@ section {
 
 /*=============================*/
 /*=============================*/
+
 /*   NEW  team icon svg  */
 
 .team-icon {
@@ -423,8 +408,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  fill: #afb1b8;
 }
 
 .link-icon:hover,
@@ -444,6 +427,7 @@ section {
   margin-left: 30px;
 }
 /*=============================*/
+
 /*=============================*/
 .partners-link {
   width: 170px;
@@ -467,7 +451,7 @@ section {
 }
 
 /*=============================*/
-/*=============================*/
+
 /*=============================*/
 
 /* ===== Логотип ======*/
@@ -493,11 +477,23 @@ section {
 /*=============================*/
 
 /* ==== Футер ==== */
+
 .dark-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+/*=============================*/
+.footer-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+
+/*=============================*/
 .add-ft {
   margin-top: 20px;
 }
@@ -507,13 +503,44 @@ section {
 }
 
 .link-map {
+  font-weight: 400;
   color: var(--alt-titel-cl);
 }
 
 .link-ft {
+  font-weight: 400;
   color: var(--link-ft-text);
 }
 
+/*=============LINKS================*/
+.socials-list {
+  margin-top: 20px;
+}
+
+.socials-ft > h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--alt-titel-cl);
+
+  margin-top: 12px;
+}
+
+.socials-icon {
+  display: inline-flex;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-icon * .icon-svg {
+  fill: var(--alt-titel-cl);
+}
 /*=============================*/
 
 /* ==== Фильтер поиска портфолио ===== */
@@ -562,7 +589,7 @@ section {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  /*padding-bottom: 94px;*/
+
   margin-left: calc(-1 * 30px);
   margin-top: calc(-1 * 30px);
   list-style: none;

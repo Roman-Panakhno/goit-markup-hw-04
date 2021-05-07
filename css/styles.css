@@ -75,8 +75,6 @@ section {
 
 /* ==== Хедер ====*/
 .page-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -90,6 +88,11 @@ section {
   display: flex;
   align-items: center;
   margin-right: auto;
+}
+
+.link-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /*=============================*/
 
